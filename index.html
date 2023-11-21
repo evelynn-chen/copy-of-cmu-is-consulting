@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-row">
+            <div class="form-group col-sm-6 col-md-4" id="sdg-filter">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle btn-block text-left" type="button" id="sdgGoalsButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select SDG
+                    </button>
+                    <div class="dropdown-menu px-2" aria-labelledby="sdgGoalsButton">
+                        <!-- extra: promote health -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="nopoverty" id="nopovertyCheckbox">
+                            <label class="form-check-label" for="nopovertyCheckbox">
+                                1. No Poverty
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="zerohunger" id="zerohungerCheckbox">
+                            <label class="form-check-label" for="zerohungerCheckbox">
+                                2. Zero Hunger
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="goodhealthandwellbeing"
+                                id="goodhealthandwellbeingCheckbox">
+                            <label class="form-check-label" for="goodhealthandwellbeingCheckbox">
+                                3. Good Health and Well-being
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="qualityeducation"
+                                id="qualityeducationCheckbox">
+                            <label class="form-check-label" for="qualityeducationCheckbox">
+                                4. Quality Education
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="genderequality"
+                                id="genderequalityCheckbox">
+                            <label class="form-check-label" for="genderequalityCheckbox">
+                                5. Gender Equality
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="cleanwater" id="cleanwaterCheckbox">
+                            <label class="form-check-label" for="cleanwaterCheckbox">
+                                6. Clean Water and Sanitation
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="cleanenergy"
+                                id="cleanenergyCheckbox">
+                            <label class="form-check-label" for="cleanenergyCheckbox">
+                                7. Affordable and Clean Energy
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="workeconomicgrowth"
+                                id="workeconomicgrowthCheckbox">
+                            <label class="form-check-label" for="workeconomicgrowthCheckbox">
+                                8. Decent Work and Economic Growth
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="industryinnovationinfrastructure"
+                                id="industryinnovationinfrastructureCheckbox">
+                            <label class="form-check-label" for="industryinnovationinfrastructureCheckbox">
+                                9. Industry, Innovation and Infrastructure
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="equality" id="equalityCheckbox">
+                            <label class="form-check-label" for="equalityCheckbox">
+                                10. Reduced Inequalities
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="sustainablecities"
+                                id="sustainablecitiesCheckbox">
+                            <label class="form-check-label" for="sustainablecitiesCheckbox">
+                                11. Sustainable Cities and Communities
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="responsibleconsumption"
+                                id="responsibleconsumptionCheckbox">
+                            <label class="form-check-label" for="responsibleconsumptionCheckbox">
+                                12. Responsible Consumption and Production
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="climateaction"
+                                id="climateactionCheckbox">
+                            <label class="form-check-label" for="climateactionCheckbox">
+                                13. Climate Action
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="lifebelowwater"
+                                id="lifebelowwaterCheckbox">
+                            <label class="form-check-label" for="lifebelowwaterCheckbox">
+                                14. Life Below Water
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="lifeonland" id="lifeonlandCheckbox">
+                            <label class="form-check-label" for="lifeonlandCheckbox">
+                                15. Life on Land
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="peaceandinclusion"
+                                id="peaceandinclusionCheckbox">
+                            <label class="form-check-label" for="peaceandinclusionCheckbox">
+                                16. Peace, Justice and Strong Institutions
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="partnershipsforgoals"
+                                id="partnershipsforgoalsCheckbox">
+                            <label class="form-check-label" for="partnershipsforgoalsCheckbox">
+                                17. Partnerships for the Goals
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div id="selectedSDGTags"></div>
+            </div>
+
+            <div class="form-group col-sm-6 col-md-4" id="tech-filter">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle btn-block text-left" type="button" id="techImplementedButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select Technology
+                    </button>
+                    <div class="dropdown-menu px-2" aria-labelledby="techImplementedButton">
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="api" id="apiCheckbox">
+                            <label class="form-check-label" for="apiCheckbox">
+                                API
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="applicationintegration"
+                                id="applicationintegrationCheckbox">
+                            <label class="form-check-label" for="applicationintegrationCheckbox">
+                                Application Integration
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="crm" id="crmCheckbox">
+                            <label class="form-check-label" for="crmCheckbox">
+                                CRM
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="dataanalytics"
+                                id="dataanalyticsCheckbox">
+                            <label class="form-check-label" for="dataanalyticsCheckbox">
+                                Data Analytics
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="databasesolution"
+                                id="databasesolutionCheckbox">
+                            <label class="form-check-label" for="databasesolutionCheckbox">
+                                Database Solution
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="geographicinformationsystem"
+                                id="geographicinformationsystemCheckbox">
+                            <label class="form-check-label" for="geographicinformationsystemCheckbox">
+                                Geographic Information System
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="informationkiosk"
+                                id="informationkioskCheckbox">
+                            <label class="form-check-label" for="informationkioskCheckbox">
+                                Information Kiosk
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="informationsecurity"
+                                id="informationsecurityCheckbox">
+                            <label class="form-check-label" for="informationsecurityCheckbox">
+                                Information Security
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="mobileapp" id="mobileappCheckbox">
+                            <label class="form-check-label" for="mobileappCheckbox">
+                                Mobile App
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="socialmedia"
+                                id="socialmediaCheckbox">
+                            <label class="form-check-label" for="socialmediaCheckbox">
+                                Social Media
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="softwareintegration"
+                                id="softwareintegrationCheckbox">
+                            <label class="form-check-label" for="softwareintegrationCheckbox">
+                                Software Integration
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="technologystrategy"
+                                id="technologystrategyCheckbox">
+                            <label class="form-check-label" for="technologystrategyCheckbox">
+                                Technology Strategy
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="userexperience"
+                                id="userexperienceCheckbox">
+                            <label class="form-check-label" for="userexperienceCheckbox">
+                                User Experience
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="webapp" id="webappCheckbox">
+                            <label class="form-check-label" for="webappCheckbox">
+                                Web App
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div id="selectedTechTags"></div>
+            </div>
+
+            <div class="form-group col-sm-12 col-md-4" id="search-filter">
+                <input type="text" class="form-control" id="search" placeholder="Search...">
+            </div>
+
+            <div class="row w-100 mx-auto" id="projects">
+            </div>
+        </div>
+
+        <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModalLabel">Title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div id="projectLogoModal">
+                            <img src="" alt="Logo" class="img-fluid mw-100 mh-100" id="modalLogo">
+                        </div>
+                        <div id="projectDescription" class="mt-3 text-left"></div>
+                        <button id="execSummaryButton" type="button" class="btn mt-3 mx-auto">Executive Summary</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

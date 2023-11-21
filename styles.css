@@ -1,0 +1,33 @@
+.project:hover {
+    background-color: black;
+    opacity: 0.3;
+}
+
+
+.learn-more {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 1;
+}
+
+.badge.carnegie-red {
+    background-color: #C41230;
+}
+
+#execSummaryButton {
+    color: white;
+    background-color: #C41230;
+}
+
+#sdgGoalsButton {
+    color: white;
+    background-color: #C41230;
+}
+
+#techImplementedButton {
+    color: white;
+    background-color: #C41230;
+}
