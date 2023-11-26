@@ -13,13 +13,13 @@
 <body>
     <div class="container">
         <div class="form-row">
-            <div class="form-group col-sm-6 col-md-4" id="sdg-filter">
+            <div class="form-group col-sm-6 col-md-3" id="sdg-filter">
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle btn-block text-left" type="button" id="sdgGoalsButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle btn-block text-left" type="button"
+                        id="sdgGoalsButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Select SDG
                     </button>
-                    <div class="dropdown-menu px-2" aria-labelledby="sdgGoalsButton">
+                    <div class="dropdown-menu px-2 w-100" aria-labelledby="sdgGoalsButton">
                         <!-- extra: promote health -->
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="nopoverty" id="nopovertyCheckbox">
@@ -140,13 +140,13 @@
                 <div id="selectedSDGTags"></div>
             </div>
 
-            <div class="form-group col-sm-6 col-md-4" id="tech-filter">
+            <div class="form-group col-sm-6 col-md-3" id="tech-filter">
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle btn-block text-left" type="button" id="techImplementedButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle btn-block text-left" type="button"
+                        id="techImplementedButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Select Technology
                     </button>
-                    <div class="dropdown-menu px-2" aria-labelledby="techImplementedButton">
+                    <div class="dropdown-menu px-2 w-100" aria-labelledby="techImplementedButton">
 
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="api" id="apiCheckbox">
@@ -247,10 +247,11 @@
                 <div id="selectedTechTags"></div>
             </div>
 
-            <div class="form-group col-sm-12 col-md-4" id="search-filter">
+            <div class="form-group col-sm-12 col-md-6" id="search-filter">
                 <input type="text" class="form-control" id="search" placeholder="Search...">
             </div>
 
+            <h2 class="mx-auto">Spring 2023</h2>
             <div class="row w-100 mx-auto" id="projects">
             </div>
         </div>
@@ -267,10 +268,18 @@
                     </div>
                     <div class="modal-body text-center">
                         <div id="projectLogoModal">
-                            <img src="" alt="Logo" class="img-fluid mw-100 mh-100" id="modalLogo">
+                            <img src="" alt="Logo" class="img-fluid mw-100 mh-100 mb-3" id="modalLogo">
                         </div>
-                        <div id="projectDescription" class="mt-3 text-left"></div>
-                        <button id="execSummaryButton" type="button" class="btn mt-3 mx-auto">Executive Summary</button>
+
+                        <h6 id="communityPartners" class="text-left font-weight-normal"></h6>
+
+                        <h6 id="studentConsultingTeam" class="text-left font-weight-normal"></h6>
+
+                        <div id="projectTags" class="align-items-start"></div>
+
+                        <h6 id="projectDescription" class="mt-3 text-left font-weight-normal"></h6>
+
+                        <button id="execSummaryButton" type="button" class="btn mt-3 mx-auto">Consulting Team Summary</button>
                     </div>
 
                 </div>
