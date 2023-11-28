@@ -25,6 +25,10 @@
     background-color: #C41230;
 }
 
+.filterBadge {
+    border: 2px solid #C41230;
+}
+
 #techImplementedButton {
     color: white;
     background-color: #C41230;
