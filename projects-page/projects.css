@@ -32,29 +32,3 @@
 
 }
 
-
-.nav-link{
-    color: white !important;
-    font-size: large;
-    font-weight: 400;
-}
-
-.nav-item.active {
-    text-decoration: underline;
-    text-decoration-color: white;
-    text-underline-offset: 5px;
-}
-
-.navbar-nav.nav-justified {
-    flex: 1;
-    justify-content: space-between;
-}
-
-.navbar-custom{
-    margin-bottom: 3%;
-}
-
-.custom-toggler {
-    border-color: white !important;
-}
-
