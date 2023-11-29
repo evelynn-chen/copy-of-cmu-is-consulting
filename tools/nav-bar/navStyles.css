@@ -19,6 +19,15 @@
     margin-bottom: 3%;
 }
 
+.dropdown-menu{
+    background-color: #E0E0E0;
+}
+
+.dropdown-divider{
+    background-color: #941120;
+}
+
+
 .custom-toggler {
     border-color: white !important;
 }
@@ -40,7 +49,6 @@
 .blog-footer p {
     font-size: 50%;
 }
-
 
 .blog-footer img{
     padding-bottom: 1%;
