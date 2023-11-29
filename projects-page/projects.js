@@ -24,7 +24,7 @@ const projects2023 = [
         communityPartners: ['Mary Menniti'],
         studentConsultingTeam: ['Anna Rippert', 'Cami Wu', 'Daniel Arriola'],
         execSummary: './exec-summaries/IGP.pdf',
-        tags: 'lifeonland promotehealth qualityeducation responsibleconsumption zerohunger webapp userexperience databasesolution'
+        tags: 'lifeonland goodhealthandwellbeing qualityeducation responsibleconsumption zerohunger webapp userexperience databasesolution'
     },
     {
         title: 'New Sun Rising',
@@ -42,7 +42,7 @@ const projects2023 = [
         communityPartners: ['Jenny Yu'],
         studentConsultingTeam: ['Brianna Wang', 'Erica Fu', 'Victoria Zhang'],
         execSummary: './exec-summaries/ProjectTheia.pdf',
-        tags: 'goodhealthandwellbeing promotehealth applicationintegration'
+        tags: 'goodhealthandwellbeing applicationintegration'
     },
     {
         title: 'Women Against Abusive Relationships',
@@ -51,7 +51,7 @@ const projects2023 = [
         communityPartners: ['Roxanne Epperson'],
         studentConsultingTeam: ['Amy Deng', 'Cathryn Lin', 'Lucy Li'],
         execSummary: './exec-summaries/WAAR.pdf',
-        tags: 'genderequality promotehealth peaceandinclusion softwareintegration technologystrategy userexperience'
+        tags: 'genderequality goodhealthandwellbeing peaceandinclusion softwareintegration technologystrategy userexperience'
     },
     {
         title: 'Queens Gambit Chess Institute',
@@ -78,7 +78,7 @@ const projects2023 = [
         communityPartners: ['Chelsea Buell', 'Jim Cirilano', 'Gillian Graber'],
         studentConsultingTeam: ['Clara Lam', 'Jason Perez', 'Michael Song'],
         execSummary: './exec-summaries/ProtectPT.pdf',
-        tags: 'cleanenergy cleanwater climateaction lifeonland peaceandinclusion promotehealth responsibleconsumption sustainablecities databasesolution webapp'
+        tags: 'cleanenergy cleanwater climateaction lifeonland peaceandinclusion goodhealthandwellbeing responsibleconsumption sustainablecities databasesolution webapp'
     },
     {
         title: 'JADA House International',
@@ -105,7 +105,7 @@ const projects2023 = [
         communityPartners: ['Deanna Sinex'],
         studentConsultingTeam: ['Colin May', 'Nathan Wai', 'Daniel Gunawan'],
         execSummary: './exec-summaries/YES.pdf',
-        tags: 'peaceandinclusion promotehealth qualityeducation workandeconomicgrowth webapp api softwareintegration mobileapp'
+        tags: 'peaceandinclusion goodhealthandwellbeing qualityeducation workandeconomicgrowth webapp api softwareintegration mobileapp'
     }
 ]
 
@@ -117,7 +117,7 @@ const projects2022 = [
         communityPartners: ['Tom Welschonce', 'Tara Gainfort'],
         studentConsultingTeam: ['Thomas Choi', 'Roshan Ram', 'Brian Chou'],
         execSummary: './exec-summaries/kidsvoice.pdf',
-        tags: 'equality genderequality peaceandinclusion promotehealth qualityeducation workeconomicgrowth zerohunger databasesolution'
+        tags: 'equality genderequality peaceandinclusion goodhealthandwellbeing qualityeducation workeconomicgrowth zerohunger databasesolution'
     },
     {
         title: "The Children's Home",
@@ -126,7 +126,7 @@ const projects2022 = [
         communityPartners: ['Lisa Houlihan', 'Kimberly Hennigan'],
         studentConsultingTeam: ['Anagha Srikumar', 'Tim Wang', 'Varshaa SJ'],
         execSummary: './exec-summaries/childrenshome.pdf',
-        tags: 'promotehealth webapp'
+        tags: 'goodhealthandwellbeing webapp'
     },
     {
         title: "Red Cloud Indian School",
@@ -138,6 +138,10 @@ const projects2022 = [
         tags: 'qualityeducation softwareintegration'
     }
 ]
+
+// 
+allProjects = [projects2023, projects2022];
+mostRecentProjectYear = 2023;
 
 function createProject(data) {
     const projectContainer = document.createElement('div');
@@ -152,8 +156,8 @@ function createProject(data) {
 
     const learnMore = document.createElement('button');
     learnMore.className = 'btn d-none learn-more text-white';
-    learnMore.style.backgroundColor = '#6D6E71';
-    learnMore.textContent = 'Learn More';
+    learnMore.style.backgroundColor = '#008F91';
+    learnMore.textContent = 'View Project';
 
     project.style.transition = 'transform 0.5s ease';
     project.addEventListener('mouseenter', () => {
@@ -217,23 +221,25 @@ function createProject(data) {
     return projectContainer;
 }
 
-function displayProjects(projects2023Data, projects2022Data) {
-    // 2023
-    const projects2023 = document.getElementById('projects2023');
-    projects2023.innerHTML = '';
-    projects2023.className = 'row w-100 mx-auto';
+function displayProjects(projectsArray) {
+    const allProjectsContainer = document.getElementById('all-projects');
+    allProjectsContainer.innerHTML = '';
+    projectsArray.forEach((projectsData, index) => {
+        const yearHeading = document.createElement('h2');
+        yearHeading.textContent = `Spring ${mostRecentProjectYear - index}`;
+        yearHeading.className = 'text-center';
 
-    projects2023Data.forEach(project => {
-        projects2023.appendChild(createProject(project));
-    });
+        allProjectsContainer.appendChild(yearHeading);
 
-    // 2022
-    const projects2022 = document.getElementById('projects2022');
-    projects2022.innerHTML = '';
-    projects2022.className = 'row w-100 mx-auto';
+        const projectsContainer = document.createElement('div');
+        projectsContainer.id = `projects${mostRecentProjectYear - index}`;
+        projectsContainer.className = 'row mx-auto';
 
-    projects2022Data.forEach(project => {
-        projects2022.appendChild(createProject(project));
+        projectsData.forEach(project => {
+            projectsContainer.appendChild(createProject(project));
+        });
+
+        allProjectsContainer.appendChild(projectsContainer);
     });
 }
 
@@ -244,13 +250,13 @@ function getSelectedCheckboxes(filterId) {
 
 function createFilterBadge(tag, filterId) {
     const badge = document.createElement('span');
-    badge.className = 'badge badge-secondary p-2 m-1 bg-light text-dark font-weight-normal filterBadge';
+    badge.className = 'badge p-2 m-1 font-weight-normal filterBadge';
 
     const badgeText = document.createElement('span');
     badgeText.textContent = tag;
 
     const removeButton = document.createElement('button');
-    removeButton.className = 'btn btn-sm text-dark p-0 m-0 ml-1';
+    removeButton.className = 'btn btn-sm text-light p-0 m-0 ml-1';
     removeButton.innerHTML = '&times;';
 
     removeButton.addEventListener('click', function () {
@@ -291,35 +297,41 @@ function displaySelectedTechTags(selectedTech) {
     }
 }
 
+function getMatchingProjects(projects, selectedSDGs, selectedTech, searchTerm) {
+    return projects.filter(project => {
+        const hasMatchingSDGTags = selectedSDGs.every(tag => project.tags.includes(tag));
+        const hasMatchingTechTags = selectedTech.every(tag => project.tags.includes(tag));
+        const hasMatchingSearch = project.title.toLowerCase().includes(searchTerm) ||
+            project.description.toLowerCase().includes(searchTerm) ||
+            project.communityPartners.some(partner => partner.toLowerCase().includes(searchTerm)) ||
+            project.studentConsultingTeam.some(student => student.toLowerCase().includes(searchTerm));
+
+        return hasMatchingSDGTags && hasMatchingTechTags && hasMatchingSearch;
+    });
+}
+
 function filterProjects() {
+    const filteredProjects = [];
     const selectedSDGs = getSelectedCheckboxes('sdg-filter');
     displaySelectedSDGTags(selectedSDGs);
     const selectedTech = getSelectedCheckboxes('tech-filter');
     displaySelectedTechTags(selectedTech);
     const searchTerm = document.getElementById('search').value.toLowerCase();
 
-    const filteredProjects2023 = projects2023.filter(project => {
-        const hasMatchingSDGTags = selectedSDGs.every(tag => project.tags.includes(tag));
-        const hasMatchingTechTags = selectedTech.every(tag => project.tags.includes(tag));
-        const hasMatchingSearch = project.title.toLowerCase().includes(searchTerm) || project.description.toLowerCase().includes(searchTerm);
+    for (projects of allProjects) {
+        console.log(getMatchingProjects(projects, selectedSDGs, selectedTech, searchTerm))
+        filteredProjects.push(getMatchingProjects(projects, selectedSDGs, selectedTech, searchTerm));
+    }
+    console.log(filteredProjects)
 
-        return hasMatchingSDGTags && hasMatchingTechTags && hasMatchingSearch;
-    });
-
-    const filteredProjects2022 = projects2022.filter(project => {
-        const hasMatchingSDGTags = selectedSDGs.every(tag => project.tags.includes(tag));
-        const hasMatchingTechTags = selectedTech.every(tag => project.tags.includes(tag));
-        const hasMatchingSearch = project.title.toLowerCase().includes(searchTerm) || project.description.toLowerCase().includes(searchTerm);
-
-        return hasMatchingSDGTags && hasMatchingTechTags && hasMatchingSearch;
-    });
-
-    displayProjects(filteredProjects2023, filteredProjects2022);
+    displayProjects(filteredProjects);
 }
 
 document.addEventListener('click', function (event) {
     const sdgDropdown = document.getElementById('sdgGoalsButton');
+    sdgDropdown.classList.add('bg-light', 'text-dark');
     const techDropdown = document.getElementById('techImplementedButton');
+    techDropdown.classList.add('bg-light', 'text-dark');
 
     if (!sdgDropdown.contains(event.target) && !techDropdown.contains(event.target)) {
         filterProjects();
@@ -328,4 +340,4 @@ document.addEventListener('click', function (event) {
 
 document.getElementById('search').addEventListener('input', filterProjects);
 
-displayProjects(projects2023, projects2022);
+displayProjects(allProjects);

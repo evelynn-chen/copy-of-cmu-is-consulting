@@ -4,6 +4,11 @@
 
 #execSummaryButton {
     color: white;
+    background-color: #008F91;
+}
+
+.filterBadge {
+    color: white;
     background-color: #C41230;
 }
 
@@ -16,23 +21,17 @@
 }
 
 .modal-heading {
-    color: #C41230;
+    color: #008F91;
     font-weight: 600;
 }
 
-#sdgGoalsButton {
-    color: white;
-    background-color: #C41230;
+#sdgGoalsButton, #techImplementedButton, #search {
+    background-color: #FFFFFF;
+    color: black;
+    border: 2px solid #919191;
+
 }
 
-.filterBadge {
-    border: 2px solid #C41230;
-}
-
-#techImplementedButton {
-    color: white;
-    background-color: #C41230;
-}
 
 .nav-link{
     color: white !important;
