@@ -23,17 +23,25 @@
     border-color: white !important;
 }
 
-.footer{
+.blog-footer{
     background-color: #941120;
     margin-top: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
 }
 
-.footer p,a{
-    color: white;
+.blog-footer p,a{
+    color: #E0E0E0;
     margin-left: auto;
     margin-right: auto;
 }
 
-.footer p {
-    font-size: 75%;
+.blog-footer p {
+    font-size: 50%;
+}
+
+
+.blog-footer img{
+    padding-bottom: 1%;
 }
