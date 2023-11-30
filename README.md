@@ -4,9 +4,9 @@ by Evelynn Chen, Leo Hsu, and Amalia Kutin
 
 **How to Add Projects:**  
 1. Create a new folder in assets and add new logos.
-1. Add new executive summaries to projects-page/exec-summaries. 
-2. Navigate to *projects.js* in a code editor.
-3. Create a new variable with project data formatted like so:
+2. Add new executive summaries to projects-page/exec-summaries. 
+3. Navigate to *projects.js* in a code editor.
+4. Create a new variable with project data formatted like so:
 ```
 const projects20## = [
     {
@@ -20,5 +20,5 @@ const projects20## = [
     },
 ]
 ```
-4. Add the projects20## variable to the beginning of the `allProjects` array.
-5. Update `mostRecentProjectYear` to the year of the projects you added.
+5. Add the projects20## variable to the beginning of the `allProjects` array.
+6. Update `mostRecentProjectYear` to the year of the projects you added.
