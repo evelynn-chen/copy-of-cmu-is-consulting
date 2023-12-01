@@ -21,17 +21,17 @@ const testimonials23 = [
         quote:"The CMU IS Consulting Project connects nonprofit organizations with top-tier IS student consultants to deliver high-quality solutions and strategic advising to enhance missions and visions. Through this program, my nonprofit organization was able to increase the number of schools we impact by close to 60% thanks to the development of software to strengthen our community mapping directory. The student consultants became a part of our small but mighty team and continue to impact our work to this day.",
     },
     {
-        name:"",
+        name:"Terry Shields",
         imagePath:"",
-        position:"",
-        organization:"",
+        position:"CEO",
+        organization:"Jada House International",
         quote:"I want to let you, and faculty know that the girl power team I had was amazing. They knew the assignment without much instruction, only because I was not sure, but I did know there was updates that were needed on our website. The girl power team I had executed the assignment, kudos to Emily Ngo, Anesha Santhanam, Fernanda Molina, and Valeria Cordova Mulvany, these young ladies came together and made it happen. We met every Monday, well maybe not every Monday but for the most part we met, they were eager to satisfy their customer, and that is just what they did. And let me not forget the first initial team who were amazing as well. I will be back for another run at updating our website. This program initiative is great for upcoming new organizations/business that may need that push to get their organization/business started and noticed, and for returning clients such as myself that may need a little more technical support.",
     },
     {
-        name:"",
+        name:"Patrick Tang",
         imagePath:"",
-        position:"",
-        organization:"",
+        position:"Vice President of R&D",
+        organization:"IonQ",
         quote:"Project mustard seed is extremely grateful for the community partnership program. The team produced a web app code that allows our community to collect their thoughts on what they read, publish and share. They had to learn Django from scratch and how to integrate code to a database. They proved that they could accomplish all this within 12 weeks. So more important than the app was their inspiration to others in developing nation communities to code. The project was done using entirely free open source software and so it is accessible to all.",
     },
     {
