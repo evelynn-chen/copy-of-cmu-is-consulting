@@ -1,91 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../tools/nav-bar/navStyles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../tools/nav-bar/navStyles.css">
 </head>
+
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light navbar-custom" style="background-color: #941120;">
-        <a class="navbar-brand" href="#">
-            <img src="../assets/redesignLogo.png" width="160" height="60" alt="" loading="lazy">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light navbar-custom" style="background-color: #941120;">
+    <a class="navbar-brand mr-auto" href="#">
+      <img src="../assets/redesignLogo.png" width="186.6" height="60" alt="CMU IS Logo" loading="lazy">
+    </a>
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto nav-justified">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../projects-page/projects.html">Projects</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Become A Partner
           </a>
-        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto nav-justified">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../projects-page/projects.html">Projects</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Become A Partner
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" target="_blank" href="https://airtable.com/appoZ4Oki9OwZgFuz/shrfdCoRYnlhz0Vbu">Consulting</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="https://www.cmu.edu/" target="_blank">Web Design</a>
-              </div>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Testimonials</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.cmu.edu/" target="_blank">Qatar</a>
-            </li>
-          </ul>
-        </div>
-    </nav>
-    
-
-    <!-- MODALS -->
-    <div class="container">
-      <div class="modal fade" id="testimonialModal" tabindex="-1" role="dialog" aria-labelledby="testimonialModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="testimonialModalLabel">Title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body text-center">
-                        <div id="testimonialImageModal">
-                            <img src="" alt="Image" class="img-fluid mw-100 mh-100 mb-3" id="modalImage">
-                        </div>
-
-                        <h6 id="position" class="text-left font-weight-normal"></h6>
-
-                        <h6 id="organization" class="text-left font-weight-normal"></h6>
-
-                        <h6 id="quote" class="mt-3 text-left font-weight-normal"></h6>
-
-                    </div>
-                </div>
-            </div>
-        </div>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" target="_blank"
+              href="https://airtable.com/appoZ4Oki9OwZgFuz/shrfdCoRYnlhz0Vbu">Consulting</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="https://www.cmu.edu/" target="_blank">Web Design</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.cmu.edu/" target="_blank">Qatar</a>
+        </li>
+      </ul>
     </div>
+  </nav>
+
+
+  <!-- MODALS -->
+  <div class="container">
+    <div class="modal fade" id="testimonialModal" tabindex="-1" role="dialog" aria-labelledby="testimonialModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="testimonialModalLabel">Title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <div id="testimonialImageModal">
+              <img src="" alt="Image" class="img-fluid mw-100 mh-100 mb-3" id="modalImage">
+            </div>
+
+            <h6 id="position" class="text-left font-weight-normal"></h6>
+
+            <h6 id="organization" class="text-left font-weight-normal"></h6>
+
+            <h6 id="quote" class="mt-3 text-left font-weight-normal"></h6>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <footer class="blog-footer">
     <a href="https://www.cmu.edu/information-systems/" target="_blank">
-    <img src="../assets/redesignLogo.png" alt="CMU logo" width="200px" height="160px"></a>
+      <img src="../assets/redesignLogo.png" width="186.6" height="75" alt="CMU IS Logo"></a>
     <br>
-    <p>Acknowledgements: This website is the outcome of a student project in Mobile Web Design and Development (67-240) and is maintained by student led effort. <br>
-      Credits: Website prototyping and development © Amalia Kutin, Evelynn Chen, Leo Hsu (2023), Erin Dieringer, Zoe Feng, Arnav Luthra, Abbey Mui and Pooja Penninti (2015). <br>
+    <p>Acknowledgements: This website is the outcome of a student project in Mobile Web Design and Development (67-240)
+      and is maintained by student led effort. <br>
+      Credits: Website prototyping and development © Amalia Kutin, Evelynn Chen, Leo Hsu (2023), Erin Dieringer, Zoe
+      Feng, Arnav Luthra, Abbey Mui and Pooja Penninti (2015). <br>
       Website maintenance © Stephanie Pang, Samara McCallum, Emmet Mack, Allen Yao, Benjamin Chen, and Chloe Deng. <br>
       Faculty advisors: Prof. Sara Moussawi, Prof. Naama Ilany-Tzur, Prof. Larry Heimann, and Prof. Julia Poepping.</p>
   </footer>
 
 </body>
+
 </html>
