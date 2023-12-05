@@ -1,0 +1,24 @@
+h4 {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 30px;
+}
+p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+ul{
+    margin-left: 5%
+}
+
+.top-section {
+    height: 33.25vw;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .top-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
