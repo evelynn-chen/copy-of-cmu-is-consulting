@@ -54,12 +54,12 @@ document.addEventListener("DOMContentLoaded", function () {
         const shortenedQuote = testimony.quote.slice(0, 150) + "...";
     
         const emptyColumnStart = `<div class="col-md-3"></div>`;
-        const imageElement = `<div class="col-md-3"><img src="${testimony.imagePath}" alt="${testimony.name}" class="img-fluid mb-3" width="200"></div>`;
+        const imageElement = `<div class="col-md-3 text-center"><img src="${testimony.imagePath}" alt="${testimony.name}" class="img-fluid mb-3" width="200"></div>`;
         const contentElement = `
-          <div class="col-md-4">
-            <h5>${testimony.name}</h5>
-            <p class="text-muted">${testimony.position}</p>
-            <p class="text-muted">${testimony.organization}</p>
+          <div class="col-md-4 text-center">
+            <h5 class="mb-2">${testimony.name}</h5>
+            <p class="text-muted mb-2">${testimony.position}</p>
+            <p class="text-muted mb-2">${testimony.organization}</p>
             <p>"${shortenedQuote}" <strong><a href="#" class="learn-more-link" data-toggle="modal" data-target="#testimonialModal${testimony.name.replace(/\s/g, '')}">Learn more</a></strong></p>
           </div>`;
         const emptyColumnEnd = `<div class="col-md-2"></div>`;
