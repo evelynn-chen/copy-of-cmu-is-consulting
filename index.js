@@ -2,7 +2,7 @@ var colors = ['#C41230','#FDB515','#009647','#008F91','#043673','#007BC0'];
 
 /* 3 donut charts */
 var donutOptions = {
-  cutoutPercentage: 85, 
+  cutoutPercentage: 85,
   legend: {position:'bottom', padding:5, labels: {pointStyle:'circle', usePointStyle:true}}
 };
 
