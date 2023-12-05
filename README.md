@@ -4,9 +4,9 @@ by Evelynn Chen, Leo Hsu, and Amalia Kutin
 
 **How to Add Projects:**  
 1. Create a new folder in assets and add new logos.
-2. Add new executive summaries to projects-page/exec-summaries. 
+2. Create a new folder in projects-page/exec-summaries and add new executive summaries. 
 3. Navigate to *projects.js* in a code editor.
-4. Create a new variable with project data formatted like so:
+4. At the top, create a new variable with project data formatted like so:
 ```
 const projects20## = [
     {

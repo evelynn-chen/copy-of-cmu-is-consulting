@@ -5,7 +5,7 @@ const projects2023 = [
         logo: '../assets/SP23-Logos/GWCFB.png',
         communityPartners: ['Cherise Sandrock'],
         studentConsultingTeam: ['Emma Kwan', 'Meghana Tera', 'Ricky Lee', 'Yize Shen'],
-        execSummary: './exec-summaries/GWCFB.pdf',
+        execSummary: './exec-summaries/s23/GWCFB.pdf',
         tags: 'zerohunger userexperience'
     },
     {
@@ -14,7 +14,7 @@ const projects2023 = [
         logo: '../assets/SP23-Logos/FAAP.jpg',
         communityPartners: ['Leilani Mears'],
         studentConsultingTeam: ['Lea De Vylder', 'Michelle Liu', 'Alex Barrios'],
-        execSummary: './exec-summaries/FAAP.pdf',
+        execSummary: './exec-summaries/s23/FAAP.pdf',
         tags: 'equality peaceandinclusion databasesolution webapp'
     },
     {
@@ -23,7 +23,7 @@ const projects2023 = [
         logo: '../assets/SP23-Logos/IGP.png',
         communityPartners: ['Mary Menniti'],
         studentConsultingTeam: ['Anna Rippert', 'Cami Wu', 'Daniel Arriola'],
-        execSummary: './exec-summaries/IGP.pdf',
+        execSummary: './exec-summaries/s23/IGP.pdf',
         tags: 'lifeonland goodhealthandwellbeing qualityeducation responsibleconsumption zerohunger webapp userexperience databasesolution'
     },
     {
@@ -32,7 +32,7 @@ const projects2023 = [
         logo: '../assets/SP23-Logos/NewSunRising.png',
         communityPartners: ['Scott Wolovich'],
         studentConsultingTeam: ['Mahith Edula', 'Neel Mandapati', 'Zexuan Li', 'Ziyan Wang'],
-        execSummary: './exec-summaries/NewSunRising.pdf',
+        execSummary: './exec-summaries/s23/NewSunRising.pdf',
         tags: 'partnershipsforgoals peaceandinclusion api databasesolution technologystrategy userexperience'
     },
     {
@@ -41,7 +41,7 @@ const projects2023 = [
         logo: '../assets/SP23-Logos/ProjectTheia.jpg',
         communityPartners: ['Jenny Yu'],
         studentConsultingTeam: ['Brianna Wang', 'Erica Fu', 'Victoria Zhang'],
-        execSummary: './exec-summaries/ProjectTheia.pdf',
+        execSummary: './exec-summaries/s23/ProjectTheia.pdf',
         tags: 'goodhealthandwellbeing applicationintegration'
     },
     {
@@ -50,7 +50,7 @@ const projects2023 = [
         logo: '../assets/SP23-Logos/WAAR.png',
         communityPartners: ['Roxanne Epperson'],
         studentConsultingTeam: ['Amy Deng', 'Cathryn Lin', 'Lucy Li'],
-        execSummary: './exec-summaries/WAAR.pdf',
+        execSummary: './exec-summaries/s23/WAAR.pdf',
         tags: 'genderequality goodhealthandwellbeing peaceandinclusion softwareintegration technologystrategy userexperience'
     },
     {
@@ -59,7 +59,7 @@ const projects2023 = [
         logo: '../assets/SP23-Logos/QueensGambit.jpeg',
         communityPartners: ['Ashley Lynn Priore'],
         studentConsultingTeam: ["Angela Chen", 'Saaatvik Korisepati', 'Lisa Leung', 'Emmeline Wetzel'],
-        execSummary: './exec-summaries/QueensGambit.pdf',
+        execSummary: './exec-summaries/s23/QueensGambit.pdf',
         tags: 'equality genderequality webapp userexperience softwareintegration'
     },
     {
@@ -68,7 +68,7 @@ const projects2023 = [
         logo: '../assets/SP23-Logos/ComputerReach.jpg',
         communityPartners: ['Kyle Spangler'],
         studentConsultingTeam: ['Brandan Chen', 'Elyse Im', 'Joanna Yao'],
-        execSummary: './exec-summaries/ComputerReach.pdf',
+        execSummary: './exec-summaries/s23/ComputerReach.pdf',
         tags: 'equality partnershipsforgoals qualityeducation industryinnovationinfrastructure api softwareintegration technologystrategy'
     },
     {
@@ -77,7 +77,7 @@ const projects2023 = [
         logo: '../assets/SP23-Logos/ProtectPT.jpg',
         communityPartners: ['Chelsea Buell', 'Jim Cirilano', 'Gillian Graber'],
         studentConsultingTeam: ['Clara Lam', 'Jason Perez', 'Michael Song'],
-        execSummary: './exec-summaries/ProtectPT.pdf',
+        execSummary: './exec-summaries/s23/ProtectPT.pdf',
         tags: 'cleanenergy cleanwater climateaction lifeonland peaceandinclusion goodhealthandwellbeing responsibleconsumption sustainablecities databasesolution webapp'
     },
     {
@@ -86,7 +86,7 @@ const projects2023 = [
         logo: '../assets/SP23-Logos/JADA_House.png',
         communityPartners: ['Terri Shields'],
         studentConsultingTeam: ['Anesha Santhanam', 'Emily Ngo', 'Fernanda Molina', 'Valeria Cordova'],
-        execSummary: './exec-summaries/JADA_House.pdf',
+        execSummary: './exec-summaries/s23/JADA_House.pdf',
         tags: 'peaceandinclusion dataanalytics userexperience webapp'
     },
     {
@@ -95,7 +95,7 @@ const projects2023 = [
         logo: '../assets/SP23-Logos/Amachi.png',
         communityPartners: ['Caily Grube'],
         studentConsultingTeam: ['Saloni Gandhi', 'Kimberly Gao', 'Zhuowen (Helen) Huang', 'Zahir Saiyed'],
-        execSummary: './exec-summaries/Amachi.pdf',
+        execSummary: './exec-summaries/s23/Amachi.pdf',
         tags: 'equality qualityeducation api technologystrategy userexperience webapp'
     },
     {
@@ -104,7 +104,7 @@ const projects2023 = [
         logo: '../assets/SP23-Logos/YES.png',
         communityPartners: ['Deanna Sinex'],
         studentConsultingTeam: ['Colin May', 'Nathan Wai', 'Daniel Gunawan'],
-        execSummary: './exec-summaries/YES.pdf',
+        execSummary: './exec-summaries/s23/YES.pdf',
         tags: 'peaceandinclusion goodhealthandwellbeing qualityeducation workandeconomicgrowth webapp api softwareintegration mobileapp'
     }
 ]
@@ -116,7 +116,7 @@ const projects2022 = [
         logo: '../assets/SP22-Logos/kidsvoice.png',
         communityPartners: ['Tom Welschonce', 'Tara Gainfort'],
         studentConsultingTeam: ['Thomas Choi', 'Roshan Ram', 'Brian Chou'],
-        execSummary: './exec-summaries/kidsvoice.pdf',
+        execSummary: './exec-summaries/s22/kidsvoice.pdf',
         tags: 'equality genderequality peaceandinclusion goodhealthandwellbeing qualityeducation workeconomicgrowth zerohunger databasesolution'
     },
     {
@@ -125,7 +125,7 @@ const projects2022 = [
         logo: '../assets/SP22-Logos/childrenshome.jpg',
         communityPartners: ['Lisa Houlihan', 'Kimberly Hennigan'],
         studentConsultingTeam: ['Anagha Srikumar', 'Tim Wang', 'Varshaa SJ'],
-        execSummary: './exec-summaries/childrenshome.pdf',
+        execSummary: './exec-summaries/s22/childrenshome.pdf',
         tags: 'goodhealthandwellbeing webapp'
     },
     {
@@ -134,12 +134,38 @@ const projects2022 = [
         logo: '../assets/SP22-Logos/RCIS.jpeg',
         communityPartners: ['Matthew Rama'],
         studentConsultingTeam: ['Mikail Cheema', 'Vishesh Pagarani', 'Neha Joshi'],
-        execSummary: './exec-summaries/RCIS.pdf',
+        execSummary: './exec-summaries/s22/RCIS.pdf',
         tags: 'qualityeducation softwareintegration'
+    },
+    {
+        title: "Patchy Fog",
+        description: "Patchy Fog spreads outdoor, self guided education to get those who may normally be glued to their computers, out of the house. The CMU IS team is helping to spread the project further from the initial school district where it was implemented by building a virtual community for social interaction and collaboration, as well as a webapp to submit and view the products of community members.",
+        logo: '../assets/SP22-Logos/patchyfog.jpg',
+        communityPartners: ['Damon Hargraves'],
+        studentConsultingTeam: ['Kalen Gressler', 'Siddharth Paratkar', 'Max Sobkov'],
+        execSummary: './exec-summaries/s22/patchyfog.pdf',
+        tags: 'industryinnovationinfrastructure qualityeducation webapp geographicinformationsystems socialmedia'
+    },
+    {
+        title: "Queens Gambit",
+        description: "The Queens Gamit Chess Institute's mission is to provide enrichment chess classes to under served communities in the greater Pittsburgh area. The CMU IS developed a CRM wesbite using Ruby on Rails for TQGCI to better manage community partnerships and programs.",
+        logo: '../assets/SP22-Logos/TQGCI.png',
+        communityPartners: ['Ashley Priore'],
+        studentConsultingTeam: ['Allison Cao', 'Waverly Chin', 'Sara Song'],
+        execSummary: './exec-summaries/s22/patchyfog.pdf',
+        tags: 'qualityeducation genderequality webapp'
+    },
+    {
+        title: "Primate Portal",
+        description: "The Queens Gamit Chess Institute's mission is to provide enrichment chess classes to under served communities in the greater Pittsburgh area. The CMU IS developed a CRM wesbite using Ruby on Rails for TQGCI to better manage community partnerships and programs.",
+        logo: '../assets/SP22-Logos/primateportal.jpg',
+        communityPartners: ['Ashley Priore'],
+        studentConsultingTeam: ['Allison Cao', 'Waverly Chin', 'Sara Song'],
+        execSummary: './exec-summaries/s22/primateportal.pdf',
+        tags: 'qualityeducation genderequality webapp'
     }
 ]
 
-// 
 allProjects = [projects2023, projects2022];
 mostRecentProjectYear = 2023;
 
