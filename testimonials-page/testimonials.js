@@ -86,9 +86,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 <p class="text-muted">${testimony.organization}</p>
                 <p>"${testimony.quote}"</p>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
             </div>
           </div>
         </div>
