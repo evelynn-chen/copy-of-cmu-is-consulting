@@ -5,7 +5,7 @@ var donutColors = ['#C41230','#FDB515','#009647','#008F91','#043673','#007BC0'];
 document.addEventListener('DOMContentLoaded', function() {
     // Bubble chart
     const bubbleDataValues = [57, 27, 15, 4, 14, 3, 4, 23, 6, 2];
-    const bubbleDataLabels = ['Education', 'Equity', 'Sustainability', 'Business', 'Health', 'Animals', 'Gov.', 'Social Services', 'Food', 'Other'];
+    const bubbleDataLabels = ['Education: 57', 'Equity: 27', 'Sustainability: 15', 'Business: 4', 'Health: 14', 'Animals: 3', 'Gov.: 4', 'Social Services: 23', 'Food: 6', 'Other: 2'];
 
     const locationX = [30, 60, 5, 15, 10, 73, 80, 55, 45, 50];
     const locationY = [150, 235, 80, 45, 190, 180, 175, 100, 270, 220];
