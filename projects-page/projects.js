@@ -166,9 +166,11 @@ const projects2022 = [
     }
 ]
 
+// yearly updates happen here
 allProjects = [projects2023, projects2022];
 mostRecentProjectYear = 2023;
 
+// creates a project tile
 function createProject(data) {
     const projectContainer = document.createElement('div');
     projectContainer.className = 'col-lg-2 col-md-4 col-sm-6 my-2';
@@ -199,6 +201,7 @@ function createProject(data) {
 
     });
 
+    // project modal
     learnMore.addEventListener('click', () => {
         const communityPartnersContainer = document.getElementById('communityPartners');
         communityPartnersContainer.innerHTML = `<span class="modal-heading">${data.communityPartners.length > 1 ? 'Community Partners' : 'Community Partner'}</span>: ${data.communityPartners.join(', ')}`;
@@ -247,6 +250,7 @@ function createProject(data) {
     return projectContainer;
 }
 
+// displays all project tiles
 function displayProjects(projectsArray) {
     const allProjectsContainer = document.getElementById('all-projects');
     allProjectsContainer.innerHTML = '';
@@ -274,6 +278,7 @@ function getSelectedCheckboxes(filterId) {
     return Array.from(checkboxes).map(checkbox => checkbox.value);
 }
 
+// create badges for what the user is curently filtering by
 function createFilterBadge(tag, filterId) {
     const badge = document.createElement('span');
     badge.className = 'badge p-2 m-1 font-weight-normal filterBadge';
@@ -299,6 +304,7 @@ function createFilterBadge(tag, filterId) {
     return badge;
 }
 
+// display sdg tags that are currently being used to filter
 function displaySelectedSDGTags(selectedSDGs) {
     const selectedTagsContainer = document.getElementById('selectedSDGTags');
     selectedTagsContainer.innerHTML = '';
@@ -311,6 +317,7 @@ function displaySelectedSDGTags(selectedSDGs) {
     }
 }
 
+// display technology tags that are currently being used to filter
 function displaySelectedTechTags(selectedTech) {
     const selectedTagsContainer = document.getElementById('selectedTechTags');
     selectedTagsContainer.innerHTML = '';
@@ -323,6 +330,7 @@ function displaySelectedTechTags(selectedTech) {
     }
 }
 
+// check if a project matches the filters
 function getMatchingProjects(projects, selectedSDGs, selectedTech, searchTerm) {
     return projects.filter(project => {
         const hasMatchingSDGTags = selectedSDGs.every(tag => project.tags.includes(tag));
@@ -336,6 +344,7 @@ function getMatchingProjects(projects, selectedSDGs, selectedTech, searchTerm) {
     });
 }
 
+// filter projects
 function filterProjects() {
     const filteredProjects = [];
     const selectedSDGs = getSelectedCheckboxes('sdg-filter');
