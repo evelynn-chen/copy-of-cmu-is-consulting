@@ -1,8 +1,9 @@
-var colors = ['#C41230','#FDB515','#009647','#008F91','#043673','#007BC0','#EF3A47','#1F4C4C','#182C4B','#719F94'];
-var donutColors = ['#C41230','#FDB515','#009647','#008F91','#043673','#007BC0'];
-// bubble chart 
+var colors = ['#C41230', '#FDB515', '#009647', '#008F91', '#043673', '#007BC0', '#EF3A47', '#1F4C4C', '#182C4B', '#719F94'];
+var donutColors = ['#C41230', '#FDB515', '#009647', '#008F91', '#043673', '#007BC0'];
+var bubbleChart;
+var donutChart;
 
-document.addEventListener('DOMContentLoaded', function() {
+function drawCharts() {
     // Bubble chart
     const bubbleDataValues = [57, 27, 15, 4, 14, 3, 4, 23, 6, 2];
     const bubbleDataLabels = ['Education: 57', 'Equity: 27', 'Sustainability: 15', 'Business: 4', 'Health: 14', 'Animals: 3', 'Gov.: 4', 'Social Services: 23', 'Food: 6', 'Other: 2'];
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const bubbleCtx = document.getElementById('chBubbleChart').getContext('2d');
 
-    new Chart(bubbleCtx, {
+    bubbleChart = new Chart(bubbleCtx, {
         type: 'bubble',
         data: {
             datasets: bubbleData.map(dataPoint => ({
@@ -87,10 +88,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var donutCtx = document.getElementById("chDonut1");
     if (donutCtx) {
-        new Chart(donutCtx, {
+        donutChart = new Chart(donutCtx, {
             type: 'doughnut',
             data: donutData,
             options: donutOptions
         });
     }
+}
+document.addEventListener('DOMContentLoaded', drawCharts);
+window.addEventListener('resize', function () {
+    if (bubbleChart) {
+        bubbleChart.destroy();
+    }
+
+    if (donutChart) {
+        donutChart.destroy();
+    }
+    
+    drawCharts();
 });
