@@ -1,4 +1,9 @@
 /*Text formatting*/
+.body {
+    font-family: 'Open Sans', sans-serif !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
 .main {
     margin-left: 5%;
     margin-right: 5%;

@@ -2,6 +2,11 @@
     background-color: #C41230;
 }
 
+.body {
+    font-family: 'Open Sans', sans-serif !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
 #execSummaryButton {
     color: white;
     background-color: #008F91;

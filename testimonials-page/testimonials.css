@@ -1,3 +1,8 @@
+.body {
+  font-family: 'Open Sans', sans-serif !important;
+  font-family: 'Roboto', sans-serif !important;
+}
+
 .learn-more-link {
     color: black;
     text-decoration: none;
