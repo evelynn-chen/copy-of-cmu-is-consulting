@@ -1,28 +1,23 @@
-h4 {
+/*Text formatting*/
+.main {
     margin-left: 5%;
     margin-right: 5%;
+}
+h4 {
     margin-top: 30px;
 }
-p {
-    margin-left: 5%;
-    margin-right: 5%;
-}
-ul{
-    margin-left: 5%
-}
 
+/*Header image and title*/
 .top-section {
     height: 33.25vw;
     display: flex;
     gap: 20px;
 }
-  
-  .top-section img {
+.top-section img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 .top-section h1 {
     color: white;
     position: absolute;
@@ -31,5 +26,17 @@ ul{
     left: 50%;
     transform: translate(-50%, -10%);
     padding: 10px;
+}
 
+.timeline {
+    width: 50vw;
+    display: block;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.timeline img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
 }
