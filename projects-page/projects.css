@@ -25,10 +25,10 @@
     font-weight: 600;
 }
 
-#sdgGoalsButton, #techImplementedButton, #search {
+#sdgGoalsButton,
+#techImplementedButton,
+#search {
     background-color: #FFFFFF;
     color: black;
     border: 2px solid #919191;
-
 }
-

@@ -345,11 +345,8 @@ function filterProjects() {
     const searchTerm = document.getElementById('search').value.toLowerCase();
 
     for (projects of allProjects) {
-        console.log(getMatchingProjects(projects, selectedSDGs, selectedTech, searchTerm))
         filteredProjects.push(getMatchingProjects(projects, selectedSDGs, selectedTech, searchTerm));
     }
-    console.log(filteredProjects)
-
     displayProjects(filteredProjects);
 }
 
