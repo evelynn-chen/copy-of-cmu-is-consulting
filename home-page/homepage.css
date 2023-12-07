@@ -31,6 +31,7 @@ iframe {
     margin-right: auto;
 }
 
+/*Timeline grid and graphics*/
 .timeline-grid {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -39,8 +40,6 @@ iframe {
       "fall spring"
       "fall-graphic spring-graphic";
   }
-
-/*Timeline graphics*/
 #timeline {
     width: 40vw;
     display: block;
